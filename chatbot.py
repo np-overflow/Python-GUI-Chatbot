@@ -35,6 +35,9 @@ def send_message():
 root = tk.Tk()
 root.title("Chatbot Client")
 
+title = tk.Label(root, text="Chatbot Client")
+title.pack(padx=10, pady=10)
+
 # Chat history display
 chat_history = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=50, height=20, state='normal')
 chat_history.pack(padx=10, pady=10)
